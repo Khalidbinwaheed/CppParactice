@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    queue<int> myQueue;  // Correct type
+    queue<int> myQueue;  
     myQueue.push(1);
     myQueue.push(2);
     myQueue.push(3);
@@ -12,11 +12,11 @@ int main()
     myQueue.push(5);
 
     cout << "Size of the queue is: " << myQueue.size() << endl;
-    cout << "Front element of the queue is: " << myQueue.front() << endl;
-    cout << "Back element of the queue is: " << myQueue.back() << endl;
-
-    cout << "Element popped from the queue is: " << myQueue.front() << endl; // Access the front element
-    myQueue.pop(); // Remove the front element
-
+    myQueue.pop();
+    myQueue.pop();
+    myQueue.pop();
+    myQueue.pop();
+    cout << "Size of the queue is: " << myQueue.size() << endl;
+    
     return 0;
 }
