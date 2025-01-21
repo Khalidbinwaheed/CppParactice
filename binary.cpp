@@ -24,7 +24,7 @@ int main()
     root->left->left = newNode(4);
     
     cout << "Binary tree created successfully" << endl;
-    cout<< "Root node is: "<< root->data << endl;
+    cout<< "Root node is: "<< root->left->data << endl;
     return 0;
 
 }
