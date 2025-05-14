@@ -49,13 +49,5 @@ int main() {
     cout << "Sorted array:   ";
     printArray(arr, n);
 
-    int single_arr[] = {42};
-    int n_single = 1;
-    cout << "\nOriginal single: ";
-    printArray(single_arr, n_single);
-    quickSort(single_arr, 0, n_single - 1);
-    cout << "Sorted single:   ";
-    printArray(single_arr, n_single);
-
     return 0;
 }
