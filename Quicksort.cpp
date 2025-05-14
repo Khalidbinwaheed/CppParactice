@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void manual_swap(int& a, int& b) {
+void swaping(int& a, int& b) {
     int temp = a;
     a = b;
     b = temp;
@@ -15,23 +15,23 @@ void printArray(int arr[], int size) {
     cout << endl;
 }
 
-int partition(int A[], int p, int r) {
+int subarray(int A[], int p, int r) {
     int pivot = A[r];
     int i = p - 1;
 
     for (int j = p; j < r; ++j) {
         if (A[j] <= pivot) {
             i++;
-            manual_swap(A[i], A[j]);
+            swaping(A[i], A[j]);
         }
     }
-    manual_swap(A[i + 1], A[r]);
+    swaping(A[i + 1], A[r]);
     return i + 1;
 }
 
 void quickSort(int A[], int p, int r) {
     if (p < r) {
-        int q = partition(A, p, r);
+        int q = subarray(A, p, r);
         quickSort(A, p, q - 1);
         quickSort(A, q + 1, r);
     }
